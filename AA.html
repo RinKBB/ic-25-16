@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мен туралы - Портфолио</title>
+<style>
+  /* Жалпы стильдер */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+
+  /* "Мен туралы" секциясының контейнері */
+  .about-section {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  /* Суретке арналған стиль */
+  .about-image {
+    flex: 0 0 220px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #e9ecef;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+
+  /* Мәтінге арналған стиль */
+  .about-content {
+    flex: 1;
+  }
+
+  .about-content h2 {
+    color: #2b2d42;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .about-content p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  /* Дағдылар (Skills) тегтері */
+  .skills-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+  }
+
+  .skill-tag {
+    background: #edf2f4;
+    color: #2b2d42;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #d8e2dc;
+  }
+
+  /* Мобильді құрылғыларға бейімделу (Респонсив) */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    
+    .skills-container {
+      justify-content: center;
+    }
+  }
+</style>
+</head>
+<body>
+
+<section class="about-section">
+  <div class="about-image">
+    <img src="https://eldala.kz/uploads/all/8f/8c/b9/8f8cb9f31e251365e804b1e1e944e002.jpg" alt="Қуаныштың суреті">
+  </div>
+  
+  <div class="about-content">
+    <h2>Мен туралы</h2>
+    <p>Сәлем! Менің атым Қуаныш. Мен АТУ-дың "Ақпараттық жүйелер" мамандығының 1-курс студентімін.</p>
+    <p>Мен веб-әзірлеуге және бағдарламалауға қатты қызығамын. Қазіргі таңда түрлі цифрлық өнімдерді – бизнеске арналған веб-сайттардан бастап, күрделірек веб-қосымшалар мен тренажерлар жасауды үйреніп, нақты жобалармен тәжірибе жинап жүрмін. Сондай-ақ, CRPG жанрындағы бейнеойындарды жасауға және олардың механикасын зерттеуге ерекше ықыласым бар.</p>
+    <p>Менің басты мақсатым – қолданушыларға ыңғайлы әрі әдемі интерфейсі бар, сапалы IT-жобалар жасап шығару.</p>
+
+    <div class="skills-container">
+      <span class="skill-tag">Web Development</span>
+      <span class="skill-tag">JavaScript / Python</span>
+      <span class="skill-tag">CRPG Game Design</span>
+      <span class="skill-tag">UI/UX</span>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
